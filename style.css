@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f7fa;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="number"]:focus {
+    border-color: #ff9100;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #ff9100;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.5s, box-shadow 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.attempts {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#history{
+    margin-bottom: 15px;
+}
+
+.history-item {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button.restart-button {
+    margin-top: 20px;
+    background-color: #dc3545;
+}
+
+button.restart-button:hover {
+    background-color: #c82333;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 20px;
+        max-width: 500px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    input[type="number"] {
+        padding: 10px 12px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    
+    button {
+        padding: 10px 16px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    
+    #message {
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    
+    .attempts {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+.container{
+    max-width: 360;
+}
+
+}
